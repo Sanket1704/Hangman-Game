@@ -30,8 +30,7 @@ def chooseWord(wordlist):
     return random.choice(wordlist)
 
 
-# Load the list of words into the variable wordlist
-# so that it can be accessed from anywhere in the program
+
 wordlist = loadWords()
 
 def isWordGuessed(secretWord, lettersGuessed):
@@ -73,19 +72,17 @@ def hangman(secretWord):
 
     Starts up an interactive game of Hangman.
 
-    * At the start of the game, let the user know how many 
+    * At the start of the game, lets the user know how many 
       letters the secretWord contains.
 
-    * Ask the user to supply one guess (i.e. letter) per round.
+    * Asks the user to supply one guess (i.e. letter) per round.
 
-    * The user should receive feedback immediately after each guess 
+    * The user receives feedback immediately after each guess 
       about whether their guess appears in the computers word.
 
-    * After each round, you should also display to the user the 
+    * After each round, the user is displayed the 
       partially guessed word so far, as well as letters that the 
       user has not yet guessed.
-
-    Follows the other limitations detailed in the problem write-up.
     '''
     loadWords()
     print("Welcome to the game Hangman!")
